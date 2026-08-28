@@ -6,19 +6,26 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 20px 50px;
 }
 
 nav{
-    margin-top: 20px;
-    text-align: center;
+    display: flex;
+    gap: 25px;
 }
 
 nav a{
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 16px;
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 h1{

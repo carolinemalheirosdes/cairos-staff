@@ -98,6 +98,22 @@ nav a:hover{
     border-radius: 10px;
     background-color: goldenrod;
     color: black;
+    transition: 0.3s;
+    min-height: 180px;
+    box-sizing: border-box;
+}
+
+#servicos article:hover{
+    transform: scale(1.03);
+}
+
+#servicos article h3{
+    font-size: 22px;
+    margin-top: 0;
+}
+
+#servicos article p {
+    line-height: 1.6;
 }
 
 

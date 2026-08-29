@@ -49,16 +49,31 @@ nav a:hover{
 
 #inicio a{
     display: inline-block;
-    background-color: goldenrod;
+    background-color: gray;
     color: black;
     padding: 15px 30px;
     text-decoration: none;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 #inicio a:hover{
-    background-color: gray;
+    background-color: goldenrod;
 }
+
+#servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#servicos article{
+    flex: 1px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+
 
 
 

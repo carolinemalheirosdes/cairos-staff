@@ -124,7 +124,16 @@ nav a:hover{
     line-height: 1.6;
 }
 
+#eventos {
+    text-align: center;
+    padding: 60px 10%;
+}
 
+#eventos ul{
+    width: fit-content;
+    margin: 20px auto;
+    text-align: left;
+}
 
 
 

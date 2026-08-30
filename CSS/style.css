@@ -132,8 +132,31 @@ nav a:hover{
 #eventos ul{
     width: fit-content;
     margin: 20px auto;
-    text-align: left;
+    padding: 0;
+    list-style: none;
 }
+
+#eventos h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#eventos p{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+#eventos li{
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: black;
+
+}
+
 
 
 

@@ -5,21 +5,6 @@ body{
     margin: 0%;
 }
 
-#idiomas {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-#idiomas a {
-    color:goldenrod;
-    font-size: 14px;
-    font-family: cinzel;
-}
-
 header{
     display: flex;
     align-items: center;
@@ -329,4 +314,117 @@ nav a:hover {
 
 #diferenciais article {
     height: 300px;
+}
+
+#orcamento {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #111;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+#orcamento h2 {
+    font-size: 38px;
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+
+#orcamento p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+#orcamento a {
+    display: inline-block;
+    background-color: goldenrod;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#orcamento a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+#contato {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: black;
+}
+
+#contato h2 {
+    font-size: 36px;
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px auto;
+}
+
+#contato a {
+    color: goldenrod;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#contato a:hover {
+    color: white;
+}
+
+#redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+#redes-sociais a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+    color: goldenrod;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#redes-sociais a:hover {
+    background-color: goldenrod;
+    color: black;
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 30px 10%;
+    background-color: #111;
+    border-top: 1px solid goldenrod;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer p:first-child {
+    color: goldenrod;
+    font-weight: bold;
 }

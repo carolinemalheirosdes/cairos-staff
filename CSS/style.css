@@ -328,6 +328,7 @@ nav a:hover {
     font-size: 38px;
     color: goldenrod;
     margin-bottom: 20px;
+    font-family: cinzel;
 }
 
 #orcamento p {
@@ -335,6 +336,7 @@ nav a:hover {
     margin: 0 auto 30px;
     font-size: 19px;
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #orcamento a {
@@ -408,6 +410,7 @@ nav a:hover {
     color: goldenrod;
     margin-top: 0;
     margin-bottom: 20px;
+    font-family: cinzel;
 }
 
 /* TEXTO */
@@ -417,6 +420,7 @@ nav a:hover {
     margin: 0 auto 25px;
     font-size: 18px;
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* REDES SOCIAIS */
@@ -452,7 +456,7 @@ nav a:hover {
 
 /* BOTÃO */
 
-#trabalhe-conosco > a {
+#trabalhe-conosco a {
     display: inline-block;
     padding: 14px 28px;
     background-color: goldenrod;
@@ -562,6 +566,7 @@ footer p:first-child {
     nav a {
         padding: 8px 12px;
         font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
 
@@ -582,11 +587,13 @@ footer p:first-child {
 
     #sobre h2 {
         font-size: 32px;
+        font-family: cinzel;
     }
 
     #sobre p {
         font-size: 17px;
         line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
 
@@ -600,8 +607,8 @@ footer p:first-child {
 
     #servicos h2 {
         font-size: 30px;
+        font-family: cinzel;
     }
-
 
     /* EVENTOS */
 
@@ -611,6 +618,7 @@ footer p:first-child {
 
     #eventos h2 {
         font-size: 30px;
+        font-family: cinzel;
     }
 
     #eventos-sociais,
@@ -635,7 +643,6 @@ footer p:first-child {
         height: 220px;
     }
 
-
     /* DIFERENCIAIS */
 
     #diferenciais {
@@ -644,6 +651,7 @@ footer p:first-child {
 
     #diferenciais h2 {
         font-size: 30px;
+        font-family: cinzel;
     }
 
     #diferenciais article {
@@ -663,12 +671,13 @@ footer p:first-child {
 
     #orcamento h2 {
         font-size: 30px;
+        font-family: cinzel;
     }
 
     #orcamento p {
         font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
     }
-
 
     /* CONTATO */
 
@@ -689,6 +698,7 @@ footer p:first-child {
     #contato h2 {
         font-size: 28px;
         white-space: normal;
+        font-family: cinzel;
     }
 
     #redes-sociais {

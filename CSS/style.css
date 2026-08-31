@@ -87,8 +87,8 @@ nav a:hover{
     justify-self: center;
     text-align: center;
     font-size: 36px;
-    background-color: transparent;
-    color: white;
+    background-color: goldenrod;
+    color: black;
     border: 2px solid #d4af37;
     padding: 2px 8px;
     border-radius: 10px;
@@ -138,38 +138,71 @@ nav a:hover{
     padding: 60px 10%;
 }
 
-#eventos ul{
-    width: fit-content;
-    margin: 20px auto;
-    padding: 0;
-    list-style: none;
+#eventos-sociais,
+#eventos-corporativos,
+#eventos-comerciais {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 40px;
 }
 
-#eventos h2{
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-#eventos p{
-    font-size: 25px;
-    margin-top: 30px;
-}
-
-#eventos li{
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 15px 30px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+#imagem-social,
+#descricao-social,
+#imagem-corporativo,
+#descricao-corporativo,
+#imagem-comercial,
+#descricao-comercial {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
     background-color: goldenrod;
     color: black;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+}
 
+#imagem-social img,
+#imagem-corporativo img,
+#imagem-comercial img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#imagem-social h3,
+#imagem-corporativo h3,
+#imagem-comercial h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#descricao-social h3,
+#descricao-corporativo h3,
+#descricao-comercial h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+#descricao-social p,
+#descricao-corporativo p,
+#descricao-comercial p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#descricao-social ul,
+#descricao-corporativo ul,
+#descricao-comercial ul {
+    list-style: none;
+    padding: 0;
+}
+
+#descricao-social li,
+#descricao-corporativo li,
+#descricao-comercial li {
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
 #eventos li img {

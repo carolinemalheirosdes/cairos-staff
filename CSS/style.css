@@ -5,18 +5,31 @@ body{
     margin: 0%;
 }
 
+#idiomas {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+#idiomas a {
+    color:goldenrod;
+    font-size: 14px;
+    font-family: cinzel;
+}
+
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 20px 50px;
 }
 
 nav {
     display: flex;
     gap: 25px;
-    margin-right: 80px;
+    margin-left: 180px;
 }
 
 nav a {
@@ -28,6 +41,7 @@ nav a {
     border-radius: 8px;
     background-color: transparent;
     transition: 0.3s;
+    font-family: cinzel;
 }
 
 nav a:hover {
@@ -35,71 +49,52 @@ nav a:hover {
     color: black;
 }
 
-#idiomas {
-    display: flex;
-    gap: 12px;
-}
-
-#idiomas a {
-    color: white;
-    text-decoration: underline;
-    font-size: 14px;
-}
-
-#inicio{
-    text-align: center;
-    padding: 5px 10%;
-}
-
-#inicio h1 {
-    font-size: 150px;
-    font-family: kalam;
-    color: goldenrod;
-}
-
-#inicio h2{
-    font-size: 35px;
-}
-
-#inicio p{
-    font-size: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-#inicio a{
-    display: inline-block;
-    background-color:goldenrod;
-    color: black;
-    padding: 5px 30px;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-
-#inicio a:hover{
-    background-color: gray;
+#inicio img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 #sobre h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: white;
-    font-size: 36px;
+    color: goldenrod;
+    font-size: 50px;
+    font-family: cinzel;
 }
 
 #sobre{
     text-align: center;
-    color: goldenrod;
-    font-size: 20px;
+    color: white;
+    font-size: 22px;
     padding: 60px 10%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #sobre p{
     max-width: 700px;
     margin: 20px auto;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sobre a {
+    display: inline-block;
+    background-color: goldenrod;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: cinzel;
+}
+
+#sobre a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
 }
 
 #servicos h2 {
@@ -107,12 +102,8 @@ nav a:hover {
     justify-self: center;
     text-align: center;
     font-size: 36px;
-    background-color: goldenrod;
-    color: black;
-    border: 2px solid #d4af37;
-    padding: 2px 8px;
-    border-radius: 10px;
-    margin: 0;
+    color: goldenrod;
+    font-family: cinzel;
 }
 
 #servicos {
@@ -120,37 +111,38 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 50px 10%;
-    background-image: url("../Imagem/fundo-servicos.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-#servicos article{
-    flex: 1px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: goldenrod;
-    color: black;
-    transition: 0.3s;
-    min-height: 180px;
+#servicos article {
+    border: 2px solid goldenrod;
+    background-color: #111;
+    color: white;
+    border-radius: 15px;
+    padding: 25px;
     box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
 }
 
-#servicos article:hover{
-    transform: translateY(-5px) scale(1.03);
+#servicos article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.4);
 }
 
-#servicos article h3{
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 15px;
+#servicos article h3 {
+    color: goldenrod;
+    font-family: cinzel;
 }
 
 #servicos article p {
-    font-size: 16px;
-    line-height: 1.6;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#eventos h2{
+    font-size: 36px;
+    color: goldenrod;
+    font-family: cinzel;
 }
 
 #eventos {
@@ -162,7 +154,7 @@ nav a:hover {
 #eventos-corporativos,
 #eventos-comerciais {
     display: flex;
-    gap: 30px;
+    gap: 0px;
     align-items: stretch;
     margin-bottom: 40px;
 }
@@ -177,8 +169,11 @@ nav a:hover {
     padding: 20px;
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: goldenrod;
-    color: black;
+    border: 2px solid goldenrod;
+    background-color: #111;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
 }
 
 #imagem-social img,
@@ -202,6 +197,8 @@ nav a:hover {
 #descricao-comercial h3 {
     font-size: 24px;
     margin-top: 0;
+    font-family: cinzel;
+    color: goldenrod;
 }
 
 #descricao-social p,
@@ -209,6 +206,7 @@ nav a:hover {
 #descricao-comercial p {
     font-size: 17px;
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #eventos li img {
@@ -230,7 +228,7 @@ nav a:hover {
 #descricao-comercial li {
     font-size: 17px;
     margin-bottom: 10px;
-    color: black;
+    color: white;
 }
 
 #eventos-sociais,
@@ -242,7 +240,7 @@ nav a:hover {
 #eventos-sociais::after,
 #eventos-corporativos::after,
 #eventos-comerciais::after {
-    content: "...";
+    content: " ";
     position: absolute;
     left: 50%;
     top: 50%;
@@ -252,4 +250,76 @@ nav a:hover {
     padding: 8px;
     border-radius: 10%;
     z-index: 2;
+}
+
+#diferenciais {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+#diferenciais h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: goldenrod;
+    font-family: cinzel;
+}
+
+#diferenciais article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 180px;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#diferenciais article:hover {
+    transform: translateY(-8px);
+}
+
+#diferenciais article {
+    border: 2px solid goldenrod;
+    background-color: #111;
+    color: white;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    min-height: 220px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+#diferenciais article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.4);
+}
+
+#diferenciais article span {
+    display: block;
+    font-size: 40px;
+    color: goldenrod;
+    margin-bottom: 15px;
+}
+
+#diferenciais article h3 {
+    font-size: 22px;
+    color: goldenrod;
+    margin-bottom: 15px;
+    font-family: cinzel;
+}
+
+#diferenciais article p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+#diferenciais article {
+    height: 300px;
 }
